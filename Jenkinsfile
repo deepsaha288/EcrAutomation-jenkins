@@ -42,7 +42,7 @@ pipeline {
     stage('Docker Run') {
      steps{
          script {
-                sh 'docker run -d -p 8096:5000 --rm --name mypythonContainer 146747443241.dkr.ecr.ap-south-1.amazonaws.com/mydockerrepo:latest'
+                sh 'docker run -d -p 8082:5000 --rm --name mypythonContainer 146747443241.dkr.ecr.ap-south-1.amazonaws.com/mydockerrepo:latest'
             }
       }
     }
